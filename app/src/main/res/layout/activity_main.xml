@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- RelativeLayout as a root layout-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +9,7 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-
+<!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn1"
         android:layout_width="90dp"
@@ -17,8 +18,9 @@
         android:layout_toLeftOf="@+id/btn2"
         android:layout_above="@id/btn4"
         android:layout_marginBottom="25dp"
-        android:background="@color/black">
+        android:background="@android:color/transparent">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg1"
             android:layout_width="match_parent"
@@ -26,7 +28,7 @@
 
     </RelativeLayout>
 
-
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn2"
         android:layout_width="90dp"
@@ -38,6 +40,7 @@
         android:layout_marginBottom="25dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg2"
             android:layout_width="match_parent"
@@ -45,7 +48,7 @@
 
     </RelativeLayout>
 
-
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn3"
         android:layout_width="90dp"
@@ -56,6 +59,7 @@
         android:layout_marginBottom="25dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg3"
             android:layout_width="match_parent"
@@ -98,6 +102,7 @@
 <!--    </LinearLayout>-->
 
 
+    <!--    RelativeLayout that contain 1 static TextView of "Score X" text, 1 ImageView of "x" image, 1 static TextView of ":" symbol  and 1 static TextView of wining counting of "x" player-->
     <RelativeLayout
         android:id="@+id/RlScoreX"
         android:layout_width="match_parent"
@@ -105,6 +110,7 @@
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true">
 
+<!--        TextView of "Score" text-->
         <TextView
             android:id="@+id/score_X"
             android:layout_width="wrap_content"
@@ -117,6 +123,7 @@
             android:layout_marginLeft="120dp"
             android:textAlignment="center"/>
 
+<!--        ImageView of "x" image-->
         <ImageView
             android:id="@+id/imgScoreX"
             android:layout_width="25dp"
@@ -125,6 +132,7 @@
             android:layout_toEndOf="@id/score_X"
             android:layout_centerVertical="true" />
 
+        <!--        TextView of ":" symbol-->
         <TextView
             android:id="@+id/txtAssigingX"
             android:layout_width="wrap_content"
@@ -135,6 +143,7 @@
             android:textStyle="bold"
             android:layout_toEndOf="@id/imgScoreX"/>
 
+        <!--        TextView of wining counting of "x" player-->
         <TextView
             android:id="@+id/realScoreX"
             android:layout_width="wrap_content"
@@ -148,13 +157,14 @@
 
     </RelativeLayout>
 
-
+    <!--    RelativeLayout that contain 1 static TextView of "Score O" text, 1 ImageView of "o" image, 1 static TextView of ":" symbol and 1 static TextView of wining counting of "o" player-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/RlScoreX"
         android:layout_centerHorizontal="true">
 
+        <!--        TextView of "Score" text-->
         <TextView
             android:id="@+id/score_O"
             android:layout_width="wrap_content"
@@ -167,6 +177,7 @@
             android:layout_marginLeft="120dp"
             android:textAlignment="center"/>
 
+        <!--        ImageView of "o" image-->
         <ImageView
             android:id="@+id/imgScoreO"
             android:layout_width="25dp"
@@ -175,6 +186,7 @@
             android:layout_centerVertical="true"
             android:layout_toEndOf="@id/score_O" />
 
+        <!--        TextView of ":" symbol-->
         <TextView
             android:id="@+id/txtAssigingO"
             android:layout_width="wrap_content"
@@ -185,6 +197,7 @@
             android:textStyle="bold"
             android:layout_toEndOf="@id/imgScoreO"/>
 
+        <!--        TextView of wining counting of "o" player-->
         <TextView
             android:id="@+id/realScoreO"
             android:layout_width="wrap_content"
@@ -195,13 +208,9 @@
             android:textStyle="bold"
             android:layout_toEndOf="@id/txtAssigingO"/>
 
-
-
     </RelativeLayout>
 
-
-
-
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn4"
         android:layout_width="90dp"
@@ -210,6 +219,7 @@
         android:layout_toLeftOf="@id/btn5"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg4"
             android:layout_width="match_parent"
@@ -218,7 +228,7 @@
     </RelativeLayout>
 
 
-
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn5"
         android:layout_width="90dp"
@@ -228,6 +238,7 @@
         android:layout_marginRight="20dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg5"
             android:layout_width="match_parent"
@@ -237,6 +248,7 @@
     </RelativeLayout>
 
 
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn6"
         android:layout_width="90dp"
@@ -245,6 +257,7 @@
         android:layout_toRightOf="@id/btn5"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg6"
             android:layout_width="match_parent"
@@ -253,6 +266,7 @@
     </RelativeLayout>
 
 
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn7"
         android:layout_width="90dp"
@@ -263,6 +277,7 @@
        android:layout_marginTop="25dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg7"
             android:layout_width="match_parent"
@@ -271,6 +286,7 @@
     </RelativeLayout>
 
 
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn8"
         android:layout_width="90dp"
@@ -282,6 +298,7 @@
         android:layout_marginTop="25dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg8"
             android:layout_width="match_parent"
@@ -289,6 +306,7 @@
 
     </RelativeLayout>
 
+    <!--    RelativeLayout that contain 1 ImageView-->
     <RelativeLayout
         android:id="@+id/btn9"
         android:layout_width="90dp"
@@ -299,6 +317,7 @@
         android:layout_marginTop="25dp"
         android:background="@color/black">
 
+        <!--        ImageView that hold 1 image resource form .java file-->
         <ImageView
             android:id="@+id/btnImg9"
             android:layout_width="match_parent"
@@ -308,7 +327,7 @@
     </RelativeLayout>
 
 
-
+<!-- 1 Horizontal RelativeLayout-->
     <RelativeLayout
         android:layout_width="330dp"
         android:layout_height="8dp"
@@ -317,6 +336,7 @@
         android:layout_above="@id/btn5"
         android:layout_marginBottom="10dp"/>
 
+    <!-- 2 Horizontal RelativeLayout-->
     <RelativeLayout
         android:layout_width="330dp"
         android:layout_height="8dp"
@@ -325,6 +345,7 @@
         android:layout_below="@id/btn5"
         android:layout_marginTop="10dp"/>
 
+    <!-- 1 Vertical RelativeLayout-->
     <RelativeLayout
         android:layout_width="8dp"
         android:layout_height="330dp"
@@ -333,6 +354,7 @@
         android:layout_marginLeft="-14dp"
         android:layout_toEndOf="@id/btn5" />
 
+    <!-- 1 Vertical RelativeLayout-->
     <RelativeLayout
         android:layout_width="8dp"
         android:layout_height="330dp"
@@ -341,7 +363,7 @@
         android:layout_toStartOf="@id/btn5"
         android:layout_marginRight="-14dp"/>
 
-
+<!-- Button for to Reset all ImageView sources-->
     <Button
         android:id="@+id/btnReset"
         android:layout_width="match_parent"
